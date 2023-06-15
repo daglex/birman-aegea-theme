@@ -11,7 +11,7 @@
 - Gregor 400,GregorIT 400</br>
 - P22UndergroundCYProBook 400, P22UndergroundHeavy 700</br>
 - FiraCode-Regular 400</br></br>
-В темы оформления <code>Бирман</code> по пути <code>birman/styles/</code> создайте папку <code>fonts</code> и положите туда файлы шрифтов:</br></br>
+В теме оформления <code>Бирман</code> по пути <code>birman/styles/</code> создайте папку <code>fonts</code> и положите туда файлы шрифтов:</br></br>
 - Gregor.woff, GregorIT.woff, Gregor.ttf, GregorIT.ttf</br>
 - P22UndergroundHeavy.otf, P22UndergroundCYProBook.woff, P22UndergroundHeavy.woff</br>
 - FiraCode-Regular.woff
