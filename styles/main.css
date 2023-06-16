@@ -1,0 +1,313 @@
+:root {
+    --backgroundColor: #fff;
+    --backgroundTransparentColor: rgba(255, 255, 255, 0.8);
+    --sheetBackgroundColor: rgba(240, 240, 240, 0.8);
+    --foregroundColor: #000;
+    --thinRuleColor: rgba(0, 0, 0, 0.15);
+    --headingsColor: #000;
+    --headingsUnderlineColor: rgba(0, 0, 0, 0.15);
+    --boldColor: #000;
+    --boldUnderlineColor: rgba(0, 0, 0, 0.15);
+    --linkColor: #0060a0;
+    --linkUnderlineColor: rgba(0, 96, 160, 0.15);
+    --linkColorVisited: #70a0b0;
+    --linkUnderlineColorVisited: rgba(112, 160, 176, 0.15);
+    --hoverColor: #b03000;
+    --hoverUnderlineColor: rgba(176, 48, 0, 0.15);
+    --tagColor: #567;
+    --tagUnderlineColor: rgba(85, 102, 119, 0.15);
+    --adminColor: #009030;
+    --adminUnderlineColor: rgba(0, 144, 48, 0.15);
+    --engineTextColor: #a0a0a0;
+    --engineTextUnderlineColor: rgba(160, 160, 160, 0.15);
+    --markedTextBackground: #ffffa1;
+    --markedImageBorderColor: #fff8b8;
+    --inputBackgroundColor: #f0f0f0;
+    --inputTextColor: #000;
+    --imageBorderColor: #e8e8e8;
+    --disabledColor: #cccccc;
+    --activeColor: #ff3000;
+    --verifiedColor: #009900;
+    --errorColor: #b03000;
+    --currentItemBackgroundColor: #e8e8e8;
+    --windowBackgroundColor: #fff;
+    --unsavedIndicatorColor: #b03000;
+    --subscribeButtonBackground: rgba(231, 231, 231, .8);
+    --subscribeButtonHoverBackground: rgba(212, 212, 212, .8);
+    --subscribeButtonTextColor: #000;
+    --maxWidth: 1600px;
+    --marginTop: 48px;
+    --marginLeft: 2%;
+    --marginRight: 2%;
+    --marginTopCompact: 16px;
+    --marginLeftCompact: 2%;
+    --marginRightCompact: 2%;
+    --displayLogoMarginal: block;
+    --displayLogo: none;
+    --displayLogoCompact: block;
+    --columnSpacing: 15px;
+    --borderRadius: 4px;
+    --logoTop: -20px;
+    --logoSize: 40px;
+    --blogTitleFontSize: 18px;
+    --blogTitleLineHeight: 26px;
+    --blogLogoHeight: 52px;
+    --pageHeadingFontSize: 36px;
+    --pageHeadingLineHeight: 42px;
+    --noteTitleFontSize: 40px;
+    --noteTitleLineHeight: 42px;
+    --noteTitleFavouriteFontSize: 40px;
+    --noteTitleFavouriteLineHeight: 42px;
+    --noteTextFontSize: 20px;
+    --noteTextLineHeight: 28px;
+    --subHeadingFontSize: 26px;
+    --subHeadingLineHeight: 32px;
+    --smallFontSize: 12px;
+    --smallLineHeight: 16px;
+    --bigButtonFontSize: 20px;
+    --bigButtonLineHeight: 28px;
+    --mainFontFamily: p8sans, "Arial", "Helvetica Neue", "Arial", sans-serif;
+    --noteMainFontFamily: p8serif, "Helvetica Neue", "Arial", sans-serif;
+    --smallFontFamily: inherit;
+    --time: 0.2s;
+    --timeLong: 0.33s;
+    --markColor: #202020;
+}
+@media (prefers-color-scheme: dark) {
+     :root .e2-responds-to-dark-mode {
+        --backgroundColor: #202020;
+        --backgroundTransparentColor: rgba(32, 32, 32, 0.8);
+        --sheetBackgroundColor: rgba(32, 32, 32, 0.8);
+        --foregroundColor: silver;
+        --thinRuleColor: rgba(192, 192, 192, 0.25);
+        --headingsColor: #fff;
+        --headingsUnderlineColor: rgba(255, 255, 255, 0.5);
+        --boldColor: var(--foregroundColor);
+        --boldUnderlineColor: var(--thinRuleColor);
+        --linkColor: #0080d4;
+        --linkUnderlineColor: rgba(0, 128, 212, 0.25);
+        --linkColorVisited: #70a0b0;
+        --linkUnderlineColorVisited: rgba(112, 160, 176, 0.15);
+        --hoverColor: #f04020;
+        --hoverUnderlineColor: rgba(240, 64, 32, 0.25);
+        --adminColor: #4cb26e;
+        --adminUnderlineColor: rgba(76, 178, 110, 0.25);
+        --engineTextColor: gray;
+        --engineTextUnderlineColor: rgba(128, 128, 128, 0.25);
+        --markedTextBackground: #ffffa1;
+        --markedImageBorderColor: #886600;
+        --inputBackgroundColor: #404040;
+        --inputTextColor: var(--foregroundColor);
+        --imageBorderColor: #404040;
+        --disabledColor: #606060;
+        --activeColor: var(--headingsColor);
+        --errorColor: #f04020;
+        --verifiedColor: #40c020;
+        --currentItemBackgroundColor: #303030;
+        --windowBackgroundColor: #303030;
+        --markColor: #202020;
+        --subscribeButtonHoverBackground: rgba(212,212,212,0.5);
+    }
+}
+
+/* ************************************ /
+         Подгружаемые шрифты
+**************************************/
+@font-face {
+    font-family: p8serif;
+    src: local("Gregor"), url("fonts/GregorIT.woff") format("woff"), url("fonts/GregorIT.ttf") format("truetype"), url("fonts/GregorIT.svg") format("svg");
+    font-weight: 400;
+    font-style: italic
+}
+@font-face {
+    font-family: p8serif;
+    src: local("Gregor"), url("fonts/Gregor.woff") format("woff"), url("fonts/Gregor.ttf") format("truetype"), url("fonts/Gregor.svg") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+@font-face {
+    font-family: p8sans;
+    src: url("fonts/P22UndergroundCYProBook.woff") format("woff"), url("fonts/P22UndergroundCYProBook.svg") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+@font-face {
+    font-family: p8sans;
+    src: url("fonts/P22UndergroundHeavy.woff") format("woff"), url("fonts/P22UndergroundHeavy.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal
+}
+@font-face {
+    font-family: p8mono;
+    src: url("fonts/FiraCode-Regular.woff") format("woff"), url("fonts/FiraCode-Regular.otf") format("otf"), url("fonts/FiraCode-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal
+}
+
+
+
+body, input, textarea, select, button {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+
+/* Поднимаем логотип наверх */
+.logo-marginal {
+    position: initial;
+    top: initial;
+    left: initial;
+    width: initial;
+    height: initial;
+    margin: initial;
+    transform: initial;
+}
+
+
+.flag {
+    padding: var(--marginTop) 0 40px;
+}
+
+
+.e2-note h1, .e2-note h2, .e2-text p, .e2-text ul, .e2-text ol, .e2-text li, .e2-text pre, .e2-text blockquote, .e2-text-audio, .e2-note-snippet p {
+    max-width: 840px;
+}
+.e2-text-picture, .e2-text-picture.fotorama, .e2-text-video, .e2-text-audio {
+    margin: 0 0 20px 0;
+    max-width: 1280px;
+}
+.e2-text-generic-object, .e2-text-table, .e2-text-code, .e2-text p, .e2-text ul, .e2-text ol, .e2-text li, .e2-text blockquote {
+    margin: 0 0 16px 0;
+}
+
+.e2-note h1 {
+    margin: 0 0 16px 0;
+}
+
+.e2-text h2 {
+    font-weight: bold;
+    font-size: 21.4px;
+}
+
+
+.e2-notes-gallery-item-title a {
+    font-size: 16px;
+}
+
+.e2-notes-gallery-item-title-large a {
+    font-size: 26px;
+}
+
+.e2-notes-gallery-item-summary {
+    font-size: 16px;
+}
+
+
+.e2-note-snippet h1 a, .e2-note-snippet h1 a:visited {
+    font-size: 21.4px;
+}
+
+.e2-note-snippet p {
+    font-family: p8serif, "Helvetica Neue", "Arial", sans-serif;
+    font-size: 20px;
+}
+
+
+.e2-text .note {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    float: right;
+    clear: right;
+    width: 25%;
+    min-width: 150px;
+    text-align: left;
+    /* background-color: #f2f2f2; */
+    font-family: var(--smallFontFamily);
+    font-size: 14px;
+    position: relative;
+}
+
+.e2-keyboard-shortcut {
+    font-size: 14px;
+    line-height: 16px;
+}
+.e2-pages a {
+    padding-top: 0.4em;
+    font-size: 16px;
+    line-height: 26px;
+}
+.e2-pages-prev .e2-keyboard-shortcut, .e2-pages-next .e2-keyboard-shortcut {
+    display: block;
+    padding: 0;
+    font-size: 10px;
+    line-height: 16px;
+}
+.e2-pages-prev-next a {
+    font-size: 12px !important;
+    line-height: 16px !important;
+}
+
+
+/* Описание в админке */
+.e2-text-textarea {
+    font-family: var(--noteMainFontFamily);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+
+.e2-follow-button,.e2-follow-button:visited {
+    display: none
+}
+
+.e2-follow-button-visible {
+    display: inline-block
+}
+
+.e2-note-follow-button,.e2-note-follow-button:visited {
+    background: var(--followButtonBackground);
+    color: var(--followButtonTextColor);
+    transition: background var(--time) ease-out,color var(--time) ease-out,fill var(--time) ease-out;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 0;
+    height: 22px;
+    margin: 0 10px 10px 0;
+    vertical-align: top;
+    padding: 1px 8px
+}
+
+.e2-note-follow-button:hover,.e2-note-follow-button.hover {
+    background: var(--followButtonHoverBackground);
+    color: var(--followButtonTextColor)
+}
+
+.e2-notes-gallery-item-summary {
+    line-height: 22px;
+}
+
+
+/* Теги */
+.e2-tags {
+    line-height: 2.25em;
+    margin-bottom: 48px;
+}
+.e2-tags .e2-tag {
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+
+.footer {
+    font-size: 18px;
+    margin-bottom: 2%;
+}
+
+.warning-message {
+    max-width: 480px;
+    color: rgb(128, 128, 128);
+    margin-top: 4rem;
+}
